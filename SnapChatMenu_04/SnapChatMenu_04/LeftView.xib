@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LeftView" customModule="SnapChatMenu_04" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left" translatesAutoresizingMaskIntoConstraints="NO" id="919-RW-1Lq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="919-RW-1Lq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0iH-pE-FsB"/>
+                <constraint firstItem="919-RW-1Lq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="and-tG-WU2"/>
+                <constraint firstItem="919-RW-1Lq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hH3-bd-wVu"/>
+                <constraint firstItem="919-RW-1Lq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pbX-Jb-xL2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="919-RW-1Lq" secondAttribute="trailing" id="wEn-d5-ito"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left" width="320" height="568"/>
+    </resources>
+</document>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RightView" customModule="SnapChatMenu_04" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="wxU-9Q-SXe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wxU-9Q-SXe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CAS-8u-Jkp"/>
+                <constraint firstItem="wxU-9Q-SXe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DGy-th-5tR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wxU-9Q-SXe" secondAttribute="trailing" id="FhI-v9-r2N"/>
+                <constraint firstItem="wxU-9Q-SXe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NN3-iM-mIv"/>
+                <constraint firstItem="wxU-9Q-SXe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vfu-3o-IEj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="right" width="320" height="568"/>
+    </resources>
+</document>
