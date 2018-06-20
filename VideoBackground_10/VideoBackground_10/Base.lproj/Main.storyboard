@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NNd-3k-NtD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6sM-Nj-FLW">
+            <objects>
+                <navigationController id="NNd-3k-NtD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xMF-BH-z9K">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eCc-mK-aF6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9y-d1-fuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-327" y="124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoBackground_10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambience" translatesAutoresizingMaskIntoConstraints="NO" id="nYR-nM-1FZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUn-XD-TEg">
+                                <rect key="frame" x="87.5" y="417" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.68627450980392157" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="de6-wY-sWx"/>
+                                    <constraint firstAttribute="height" constant="50" id="hhR-L9-Df3"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="H4S-7v-jt9" kind="push" id="Iw7-wJ-K4P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJU-I0-dtu">
+                                <rect key="frame" x="87.5" y="497" width="200" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="QsP-dz-lsW"/>
+                                    <constraint firstAttribute="height" constant="50" id="grI-U4-Xzn"/>
+                                </constraints>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" red="0.0" green="0.68627450980392157" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="qyQ-yd-wqV">
+                                <rect key="frame" x="78" y="70" width="218" height="66"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qyQ-yd-wqV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B4z-HC-3UC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gUn-XD-TEg" secondAttribute="bottom" constant="200" id="DJu-Mb-FI3"/>
+                            <constraint firstItem="YJU-I0-dtu" firstAttribute="top" secondItem="gUn-XD-TEg" secondAttribute="bottom" constant="30" id="G77-LY-ot2"/>
+                            <constraint firstItem="gUn-XD-TEg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JI7-zt-TQg"/>
+                            <constraint firstItem="nYR-nM-1FZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RqC-eB-Hdp"/>
+                            <constraint firstItem="YJU-I0-dtu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WUG-07-PTV"/>
+                            <constraint firstItem="qyQ-yd-wqV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Xyw-fy-SlO"/>
+                            <constraint firstItem="nYR-nM-1FZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YLZ-MR-Gqr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nYR-nM-1FZ" secondAttribute="trailing" id="bSw-6z-QDS"/>
+                            <constraint firstAttribute="bottom" secondItem="nYR-nM-1FZ" secondAttribute="bottom" id="tOL-rK-c3R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nYR-nM-1FZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="cdO-a4-wPd"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="380" y="124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E4n-vr-S5J">
+            <objects>
+                <viewController id="H4S-7v-jt9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OSe-PQ-OKy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambience" translatesAutoresizingMaskIntoConstraints="NO" id="hdX-xh-L9y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎光临" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4U5-4w-Wjr">
+                                <rect key="frame" x="141.5" y="320" width="93.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4U5-4w-Wjr" firstAttribute="centerY" secondItem="OSe-PQ-OKy" secondAttribute="centerY" id="D1r-fx-O98"/>
+                            <constraint firstAttribute="trailing" secondItem="hdX-xh-L9y" secondAttribute="trailing" id="FpM-A7-Zrd"/>
+                            <constraint firstItem="4U5-4w-Wjr" firstAttribute="centerX" secondItem="OSe-PQ-OKy" secondAttribute="centerX" id="HWA-0p-HM9"/>
+                            <constraint firstItem="hdX-xh-L9y" firstAttribute="leading" secondItem="UGq-kh-mxn" secondAttribute="leading" id="euf-eM-A3t"/>
+                            <constraint firstItem="hdX-xh-L9y" firstAttribute="top" secondItem="OSe-PQ-OKy" secondAttribute="top" id="nLh-mJ-ddV"/>
+                            <constraint firstAttribute="bottom" secondItem="hdX-xh-L9y" secondAttribute="bottom" id="scL-zd-0ow"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UGq-kh-mxn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3aM-si-KDU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9h-Z6-3hS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ambience" width="375" height="667"/>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>
