@@ -23,9 +23,18 @@ class ViewController: VideoViewController {
         
         let videoPath = Bundle.main.path(forResource: "moments", ofType: "mp4")
         
-        if videoPath != nil {
-            contentURL = URL(fileURLWithPath: videoPath!)
+        let videoUrl = URL(fileURLWithPath: videoPath!)
+        
+        let videoCutter = VideoCutter()
+        
+        videoCutter.cropVideoWithUrl(videoUrl: videoUrl, startTime: 2.0, duration: 2.0) { (newUrl, error) in
+            if newUrl != nil {
+                self.contentURL = newUrl
+            }else{
+                print("error = \(error)")
+            }
         }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
