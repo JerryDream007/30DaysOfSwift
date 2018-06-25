@@ -31,7 +31,7 @@ class ViewController: VideoViewController {
             if newUrl != nil {
                 self.contentURL = newUrl
             }else{
-                print("error = \(error)")
+                print("error = \(String(describing: error))")
             }
         }
         
