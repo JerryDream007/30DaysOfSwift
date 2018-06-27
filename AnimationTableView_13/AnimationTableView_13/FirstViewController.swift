@@ -41,6 +41,7 @@ class FirstViewController: UIViewController {
     
     func animationTableView(){
         
+        //断言,ture正常运行
         assert(self.firstTableView != nil, "firstTableView == nil")
         
         let cells = self.firstTableView.visibleCells

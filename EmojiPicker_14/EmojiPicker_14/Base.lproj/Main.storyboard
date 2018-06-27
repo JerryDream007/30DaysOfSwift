@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiPicker_14" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace" translatesAutoresizingMaskIntoConstraints="NO" id="p2c-zh-yVx">
+                                <rect key="frame" x="-123" y="-218.5" width="621" height="1104"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8EN-2e-C7t">
+                                <rect key="frame" x="10" y="70" width="355" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Adr-nj-JNN"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gew-uC-VCp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8Df-Xh-Gnj"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okV-Qx-Jip">
+                                <rect key="frame" x="60" y="320" width="255" height="50"/>
+                                <color key="backgroundColor" red="0.33200412330000001" green="0.7526855469" blue="0.076361762149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gga-tY-jvt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" red="0.080593532989999994" green="0.1024305556" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickGoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9z4-4O-KfD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结果为 : 未知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E2-fL-Fmm">
+                                <rect key="frame" x="137" y="420" width="100.5" height="21"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.22634548609999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="okV-Qx-Jip" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="H4q-WK-wdV"/>
+                            <constraint firstItem="okV-Qx-Jip" firstAttribute="top" secondItem="8EN-2e-C7t" secondAttribute="bottom" constant="50" id="USq-wM-pYA"/>
+                            <constraint firstItem="8EN-2e-C7t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="X47-CV-Euj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8EN-2e-C7t" secondAttribute="trailing" constant="10" id="dhe-Pd-UHK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="okV-Qx-Jip" secondAttribute="trailing" constant="60" id="myS-7W-bfF"/>
+                            <constraint firstItem="6E2-fL-Fmm" firstAttribute="top" secondItem="okV-Qx-Jip" secondAttribute="bottom" constant="50" id="o7k-c7-zeo"/>
+                            <constraint firstItem="6E2-fL-Fmm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rih-OO-qj6"/>
+                            <constraint firstItem="p2c-zh-yVx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t5S-AU-cjo"/>
+                            <constraint firstItem="p2c-zh-yVx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vLN-bX-R84"/>
+                            <constraint firstItem="8EN-2e-C7t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ylg-Pi-aYV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="goButton" destination="okV-Qx-Jip" id="4Bo-Qz-Bca"/>
+                        <outlet property="pickerView" destination="8EN-2e-C7t" id="RhC-0Z-fyM"/>
+                        <outlet property="resultLabel" destination="6E2-fL-Fmm" id="d4V-DZ-RvE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace" width="621" height="1104"/>
+    </resources>
+</document>
